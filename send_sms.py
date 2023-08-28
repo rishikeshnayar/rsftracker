@@ -1,8 +1,9 @@
 # Using Twilio API to send SMS messages to my phone
 from twilio.rest import Client
+import twilio_creds
 
 # Creates Twilio Client using my Twilio Account SID and Token credentials
-client = Client('AC1437ac9f993248bf1ff084256aa4c1b5', 'ea11c801f73baede7365f0ffac58ac82')
+client = Client(twilio_creds.account_sid, twilio_creds.token)
 
 # Creates message and sends it
 def text(body):
