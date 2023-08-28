@@ -3,7 +3,7 @@ from twilio.rest import Client
 import twilio_creds
 
 # Creates Twilio Client using my Twilio Account SID and Token credentials
-client = Client(twilio_creds.account_sid, twilio_creds.token)
+client = Client(twilio_creds.account_sid, twilio_creds.token) # Account_sid and token credentials stored in private file for security purposes
 
 # Creates message and sends it
 def text(body):
