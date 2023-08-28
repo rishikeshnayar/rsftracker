@@ -8,7 +8,7 @@ option.add_argument('--headless')
 option.add_argument('--no-sandbox')
 option.add_argument('--disable-dev-sh-usage')
 # Replace YOUR-PATH-TO-CHROMEDRIVER with your chromedriver location
-driver = webdriver.Chrome('~/Documents/chromedriver-mac64', options=option)
+driver = webdriver.Chrome('~/Documents/chromedriver-mac-x64', options=option)
  
 driver.get('https://www.imdb.com/chart/top/') # Getting page HTML through request
 soup = BeautifulSoup(driver.page_source, 'html.parser') # Parsing content using beautifulsoup. Notice driver.page_source instead of page.content
